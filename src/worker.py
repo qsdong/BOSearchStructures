@@ -136,7 +136,7 @@ def run_scft(para_dict, bcp, args, runtimes):
         json.dump(output_dict, f, indent=4, separators=(',', ': '))
 
     # generate phin.txt
-    phiGenerator = PhiGenerator(args.spacegroup, args.cellratio, input_dict, args.basis, args.start_basis, args.bcp, args.calPlane) # args.bcp = "AB" or "ABC"
+    phiGenerator = PhiGenerator(args.spacegroup, args.cellratio, output_dict, args.basis, args.start_basis, args.bcp, args.calPlane) # args.bcp = "AB" or "ABC"
     hkl = phiGenerator.generate_phin()
 
     if runtimes==1:
