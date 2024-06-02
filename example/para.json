@@ -1,0 +1,23 @@
+{
+  "step": 128,
+  "worker": 8,
+  "spacegroup": 136,
+  "basis": 24,
+  "start_basis": 0,
+  "bcp": "AB",
+  "fixlevel": true,
+  "cellratio": 0.5,
+  "fixratio": true,
+  "lxyzBounds": [2,20],
+  "rand": false,
+  "weight": 10,
+  "distance_weight": -10,
+  "distance_sigma": 0.1,
+  "distance_lambda": 0.1,
+  "list_size": 1000,
+  "optimizerThread": 8,
+  "calPlane": "zy",
+  "program": "/home/share/scft2024",
+  "partition": "amd_4090,intel_4090,amd_3090,intel_2080ti,intel_2080",
+  "cpupartition": "intel_Xeon,amd_4090,amd_3090"
+}
